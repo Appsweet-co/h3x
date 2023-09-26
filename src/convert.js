@@ -10,6 +10,7 @@ export const convert = ({ cell, lat = 0, lng = 0, res = SIX_HUNDRED_SQ_MILES }) 
     h3cell,
     h3resolution: getResolution(h3cell),
     h3center: cellToLatLng(h3cell),
-    inputs: cell ? [cell] : [lat, lng, res]
+    inputs: cell ? [cell] : [lat, lng, res],
+    mode: cell ? 'cell' : 'coords',
   };
 };
