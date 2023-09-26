@@ -10,6 +10,7 @@ const props = yargs()
     lat: { description: 'Latitude', type: 'number', nargs: 1, default: 0 },
     lng: { description: 'Longitude', type: 'number', nargs: 1, default: 0 },
     res: { description: 'H3 Resolution', type: 'number', nargs: 1, default: SIX_HUNDRED_SQ_MILES },
+    cell: { description: 'H3 Cell', type: 'string', nargs: 1 },
   })
   .epilog('See https://h3geo.org/docs for more info')
   .parse(hideBin(Bun.argv));
