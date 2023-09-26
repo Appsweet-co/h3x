@@ -1,7 +1,7 @@
 {
   "author": "Appsweet.co <https://appsweet.co/>",
   "bin": {
-    "h3x": "./index.js"
+    "h3x": "./index.mjs"
   },
   "dependencies": {
     "h3-js": "4.1.0",
@@ -9,10 +9,10 @@
   },
   "description": "A command line tool for https://h3geo.org/",
   "license": "MIT",
-  "main": "./index.js",
+  "main": "./index.mjs",
   "name": "@appsweet-co/h3x",
   "scripts": {
-    "start": "./index.js"
+    "start": "node ./index.mjs"
   },
   "type": "module",
   "version": "0.1.0"

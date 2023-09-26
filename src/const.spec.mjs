@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'bun:test';
-import { H3_RESOLUTIONS } from './const';
+import { H3_RESOLUTIONS } from './const.mjs';
 
 describe('H3_RESOLUTIONS', () => {
 

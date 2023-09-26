@@ -1,5 +1,5 @@
 import { cellToLatLng, getResolution, latLngToCell } from "h3-js";
-import { H3_RESOLUTIONS } from "./const";
+import { H3_RESOLUTIONS } from "./const.mjs";
 
 const { SIX_HUNDRED_SQ_MILES } = H3_RESOLUTIONS;
 

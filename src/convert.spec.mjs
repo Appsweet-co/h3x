@@ -1,5 +1,5 @@
 import { expect, test } from "bun:test";
-import { convert } from "./convert.js";
+import { convert } from "./convert.mjs";
 
 test('should return the correct h3cell for coords', () => {
   const { h3cell } = convert({});
@@ -44,10 +44,10 @@ test('should return the correct inputs for cell', () => {
 
 test('should return the correct mode for coords', () => {
   const { mode } = convert({});
-  expect(mode).toBe('coords')
+  expect(mode).toBe('coords');
 });
 
 test('should return the correct mode for cell', () => {
   const { mode } = convert({ cell: '84754a9ffffffff' });
-  expect(mode).toBe('cell')
+  expect(mode).toBe('cell');
 });

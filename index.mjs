@@ -1,9 +1,6 @@
 import yargs from "yargs";
 import { hideBin } from 'yargs/helpers';
-import { H3_RESOLUTIONS } from './src/const';
-import { convert } from "./src/convert";
-
-const { SIX_HUNDRED_SQ_MILES } = H3_RESOLUTIONS;
+import { convert } from './src/convert.mjs';
 
 const props = yargs()
   .options({
@@ -18,7 +15,7 @@ const props = yargs()
     res: ['lat', 'lng'],
   })
   .epilog('See https://h3geo.org/docs for more info')
-  .parse(hideBin(Bun.argv));
+  .parse(hideBin(process.argv));
 
 const geodata = convert(props);
 
