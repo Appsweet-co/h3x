@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "author": "Appsweet.co <https://appsweet.co/>",
   "main": "./index.js",
+  "type": "module",
   "bin": {
     "h3x": "./index.js"
   },
